@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEMBORNE — HPH Games</title>
+<style>
+:root{
+  --bg:#0b0a14;--bg2:#15122a;--gold:#FFD24D;--gold-dim:#c9a445;
+  --text:#e8eaf2;--muted:#aab1c6;--accent:#5079e6;
+  --card:rgba(255,255,255,.04);--border:rgba(255,210,77,.30);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.55;-webkit-font-smoothing:antialiased}
+body{
+  background:
+    radial-gradient(1100px 600px at 50% -100px,rgba(80,121,230,.18),transparent 60%),
+    radial-gradient(900px 500px at 50% 1200px,rgba(255,210,77,.10),transparent 70%),
+    linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+  min-height:100vh}
+.wrap{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+header{text-align:center;margin-bottom:48px}
+h1{font-size:64px;letter-spacing:.04em;margin:0 0 8px;color:var(--gold);
+  font-weight:800;text-shadow:0 2px 24px rgba(255,210,77,.18)}
+.tag{color:var(--muted);font-size:18px;margin:0}
+.divider{width:120px;height:2px;background:var(--gold-dim);margin:18px auto;opacity:.7}
+.studio{font-size:13px;color:var(--gold);letter-spacing:.2em;margin-top:6px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:28px;margin:18px 0;backdrop-filter:blur(6px)}
+.card h2{margin:0 0 12px;color:var(--gold);font-size:22px;letter-spacing:.03em}
+.card p,.card li{color:var(--text);font-size:16px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px dotted rgba(80,121,230,.5)}
+a:hover{border-bottom-style:solid}
+nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+nav a{font-size:15px;color:var(--gold);border:none;padding:8px 14px;
+  border:1px solid var(--border);border-radius:8px}
+nav a:hover{background:rgba(255,210,77,.08)}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:60px}
+ul{padding-left:22px}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+.feature .pill{background:rgba(255,210,77,.06);border:1px solid var(--border);
+  border-radius:10px;padding:14px;font-size:14px;color:var(--muted)}
+.feature .pill strong{color:var(--text);display:block;margin-bottom:4px;letter-spacing:.04em}
+@media(max-width:520px){h1{font-size:46px}.wrap{padding:36px 18px 60px}.feature{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GEMBORNE</h1>
+    <p class="tag">Match-3 RPG — 30 stages, 6 elemental bosses</p>
+    <div class="divider"></div>
+    <p class="studio">HPH&nbsp;&nbsp;GAMES</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <div class="card">
+    <h2>The Game</h2>
+    <p>GEMBORNE is a single-player match-3 RPG. Swap gems, build power
+    gems with bigger matches, unleash devastating element combos against
+    a procession of monsters, and survive 30 stages with 6 brutal bosses.
+    Each color (fire, water, nature, thunder, light, shadow) has unique
+    POWER + HYPER effects.</p>
+    <div class="feature">
+      <div class="pill"><strong>30 Stages</strong>Crawl through 6 acts, each ending in a boss with a unique skill.</div>
+      <div class="pill"><strong>POWER &amp; HYPER</strong>Match 4 → POWER gem. Match 5+ → HYPER. Match them to detonate.</div>
+      <div class="pill"><strong>Streak Decay</strong>Chain matches fast — your streak meter fades while idle.</div>
+      <div class="pill"><strong>Survival</strong>Every match hurts the monster. The monster hits back on a timer.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Get In Touch</h2>
+    <p>Bug reports, feature ideas, refunds, or just to say hi — email
+    <a href="mailto:hoangpx1104881@gmail.com">hoangpx1104881@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    © 2026 HPH Games · GEMBORNE · v0.2.1
+  </footer>
+</div>
+</body>
+</html>
